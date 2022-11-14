@@ -1,0 +1,848 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A75F02A0291132C100136DF8 /* TPOpenthreadCommissioner.docc in Sources */ = {isa = PBXBuildFile; fileRef = A75F029F291132C100136DF8 /* TPOpenthreadCommissioner.docc */; };
+		A75F02A6291132C200136DF8 /* TPOpenthreadCommissioner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A75F029B291132C100136DF8 /* TPOpenthreadCommissioner.framework */; };
+		A75F02AB291132C200136DF8 /* TPOpenthreadCommissionerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A75F02AA291132C200136DF8 /* TPOpenthreadCommissionerTests.m */; };
+		A75F02AC291132C200136DF8 /* TPOpenthreadCommissioner.h in Headers */ = {isa = PBXBuildFile; fileRef = A75F029E291132C100136DF8 /* TPOpenthreadCommissioner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A79177AD291A0F1900985047 /* TPActiveOperationalDataset.h in Headers */ = {isa = PBXBuildFile; fileRef = A79177AB291A0F1900985047 /* TPActiveOperationalDataset.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A79177AE291A0F1900985047 /* TPActiveOperationalDataset.mm in Sources */ = {isa = PBXBuildFile; fileRef = A79177AC291A0F1900985047 /* TPActiveOperationalDataset.mm */; };
+		A7B01A2E291139B4002D5B88 /* TPBorderAgentDiscover.mm in Sources */ = {isa = PBXBuildFile; fileRef = A7B01A2C291139B4002D5B88 /* TPBorderAgentDiscover.mm */; };
+		A7B01A2F291139B4002D5B88 /* TPBorderAgentDiscover.h in Headers */ = {isa = PBXBuildFile; fileRef = A7B01A2D291139B4002D5B88 /* TPBorderAgentDiscover.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7B01A3229122465002D5B88 /* TPBorderRouterNetService.h in Headers */ = {isa = PBXBuildFile; fileRef = A7B01A3029122465002D5B88 /* TPBorderRouterNetService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7B01A3329122465002D5B88 /* TPBorderRouterNetService.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B01A3129122465002D5B88 /* TPBorderRouterNetService.m */; };
+		A7C296CE2918AE0D0013951E /* ExtentionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C296CC2918AE0D0013951E /* ExtentionHelper.m */; };
+		A7C296CF2918AE0D0013951E /* ExtentionHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = A7C296CD2918AE0D0013951E /* ExtentionHelper.h */; };
+		A7C296D52918EB990013951E /* TPOTComissionerHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = A7C296D32918EB990013951E /* TPOTComissionerHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7C296D62918EB990013951E /* TPOTComissionerHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = A7C296D42918EB990013951E /* TPOTComissionerHelper.mm */; };
+		A7C296DA291908B40013951E /* TPComissionerLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = A7C296D8291908B40013951E /* TPComissionerLogger.h */; };
+		A7C296E5291912ED0013951E /* TPCommissionerHandlerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = A7C296E3291912ED0013951E /* TPCommissionerHandlerDelegate.h */; };
+		A7C296F2291915A20013951E /* TPCommissionerHandlerDelegateBrigde.h in Headers */ = {isa = PBXBuildFile; fileRef = A7C296E9291914A50013951E /* TPCommissionerHandlerDelegateBrigde.h */; };
+		A7C29710291916F40013951E /* defines.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A7C29701291916F40013951E /* defines.hpp */; };
+		A7C29711291916F40013951E /* commissioner.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A7C29702291916F40013951E /* commissioner.hpp */; };
+		A7C29712291916F40013951E /* error.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A7C29703291916F40013951E /* error.hpp */; };
+		A7C29713291916F40013951E /* network_data.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A7C29704291916F40013951E /* network_data.hpp */; };
+		A7C29714291916F40013951E /* libcommissioner.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7C29706291916F40013951E /* libcommissioner.a */; };
+		A7C29715291916F40013951E /* libcose.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7C29707291916F40013951E /* libcose.a */; };
+		A7C29716291916F40013951E /* libfmt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7C29708291916F40013951E /* libfmt.a */; };
+		A7C29717291916F40013951E /* libevent_core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7C29709291916F40013951E /* libevent_core.a */; };
+		A7C29718291916F40013951E /* libmbedcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7C2970A291916F40013951E /* libmbedcrypto.a */; };
+		A7C29719291916F40013951E /* libmbedx509.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7C2970B291916F40013951E /* libmbedx509.a */; };
+		A7C2971A291916F40013951E /* libmbedtls.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7C2970C291916F40013951E /* libmbedtls.a */; };
+		A7C2971B291916F40013951E /* libcommissioner-common.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7C2970D291916F40013951E /* libcommissioner-common.a */; };
+		A7C2971C291916F40013951E /* libcn-cbor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7C2970E291916F40013951E /* libcn-cbor.a */; };
+		A7C2971D291916F40013951E /* libevent_pthreads.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7C2970F291916F40013951E /* libevent_pthreads.a */; };
+		A7C29722291919920013951E /* TPCommissionerHandlerDelegateBrigde.mm in Sources */ = {isa = PBXBuildFile; fileRef = A7C29721291919920013951E /* TPCommissionerHandlerDelegateBrigde.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A75F02A7291132C200136DF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A75F0292291132C100136DF8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A75F029A291132C100136DF8;
+			remoteInfo = TPOpenthreadCommissioner;
+		};
+		A7B01AC429150D06002D5B88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7B01AA729150D06002D5B88 /* ot-commissioner.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C2933D974C184F779B05CBE2;
+			remoteInfo = "cn-cbor";
+		};
+		A7B01AC629150D06002D5B88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7B01AA729150D06002D5B88 /* ot-commissioner.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40D796A699FE497BAA9605C6;
+			remoteInfo = commissioner;
+		};
+		A7B01AC829150D06002D5B88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7B01AA729150D06002D5B88 /* ot-commissioner.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E5D23A291C3C458897152B0D;
+			remoteInfo = "commissioner-common";
+		};
+		A7B01ACE29150D06002D5B88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7B01AA729150D06002D5B88 /* ot-commissioner.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A7BEDEAD7E0741FFBDF906C1;
+			remoteInfo = cose;
+		};
+		A7B01AD029150D06002D5B88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7B01AA729150D06002D5B88 /* ot-commissioner.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CD7E5337F0264BC9BAD714CE;
+			remoteInfo = event_core_static;
+		};
+		A7B01AD229150D06002D5B88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7B01AA729150D06002D5B88 /* ot-commissioner.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8E4EBCBA370F4B018B32E4E4;
+			remoteInfo = event_extra_static;
+		};
+		A7B01AD429150D06002D5B88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7B01AA729150D06002D5B88 /* ot-commissioner.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A25BFD0BF76E49FB98744014;
+			remoteInfo = event_pthreads_static;
+		};
+		A7B01AD629150D06002D5B88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7B01AA729150D06002D5B88 /* ot-commissioner.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FBABE9F848FA4F589D203F93;
+			remoteInfo = event_static;
+		};
+		A7B01AD829150D06002D5B88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7B01AA729150D06002D5B88 /* ot-commissioner.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BA62066002EC4AACA6798F0A;
+			remoteInfo = fmt;
+		};
+		A7B01AE229150D06002D5B88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7B01AA729150D06002D5B88 /* ot-commissioner.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6067D667E1A342169E55C807;
+			remoteInfo = mbedcrypto;
+		};
+		A7B01AE429150D06002D5B88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7B01AA729150D06002D5B88 /* ot-commissioner.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C96F437A5C184815A7975F19;
+			remoteInfo = mbedtls;
+		};
+		A7B01AE629150D06002D5B88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7B01AA729150D06002D5B88 /* ot-commissioner.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DCB5ADF23554D0B8E817D1D;
+			remoteInfo = mbedx509;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A75F029B291132C100136DF8 /* TPOpenthreadCommissioner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TPOpenthreadCommissioner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A75F029E291132C100136DF8 /* TPOpenthreadCommissioner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPOpenthreadCommissioner.h; sourceTree = "<group>"; };
+		A75F029F291132C100136DF8 /* TPOpenthreadCommissioner.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = TPOpenthreadCommissioner.docc; sourceTree = "<group>"; };
+		A75F02A5291132C200136DF8 /* TPOpenthreadCommissionerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TPOpenthreadCommissionerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A75F02AA291132C200136DF8 /* TPOpenthreadCommissionerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPOpenthreadCommissionerTests.m; sourceTree = "<group>"; };
+		A79177AB291A0F1900985047 /* TPActiveOperationalDataset.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPActiveOperationalDataset.h; sourceTree = "<group>"; };
+		A79177AC291A0F1900985047 /* TPActiveOperationalDataset.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = TPActiveOperationalDataset.mm; sourceTree = "<group>"; };
+		A7B01A2C291139B4002D5B88 /* TPBorderAgentDiscover.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TPBorderAgentDiscover.mm; sourceTree = "<group>"; };
+		A7B01A2D291139B4002D5B88 /* TPBorderAgentDiscover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPBorderAgentDiscover.h; sourceTree = "<group>"; };
+		A7B01A3029122465002D5B88 /* TPBorderRouterNetService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPBorderRouterNetService.h; sourceTree = "<group>"; };
+		A7B01A3129122465002D5B88 /* TPBorderRouterNetService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPBorderRouterNetService.m; sourceTree = "<group>"; };
+		A7B01A3629138039002D5B88 /* libcommissioner.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcommissioner.a; path = TPOpenthreadCommissioner/TPOpenthreadCommissioner.docc/Resources/libcommissioner.a; sourceTree = "<group>"; };
+		A7B01A38291398E1002D5B88 /* libcommissioner.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcommissioner.a; path = "TPOpenthreadCommissioner/TPOpenthreadCommissioner.docc/Resources/ot-commissioner/libcommissioner.a"; sourceTree = "<group>"; };
+		A7B01A5E2914F4C7002D5B88 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/lib/libc++.tbd"; sourceTree = DEVELOPER_DIR; };
+		A7B01AA729150D06002D5B88 /* ot-commissioner.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "ot-commissioner.xcodeproj"; path = "../../Desktop/tmp3/ot-commissioner-ios-build/ios-build/ios-cmake-gen/ot-commissioner.xcodeproj"; sourceTree = "<group>"; };
+		A7C296CC2918AE0D0013951E /* ExtentionHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtentionHelper.m; sourceTree = "<group>"; };
+		A7C296CD2918AE0D0013951E /* ExtentionHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtentionHelper.h; sourceTree = "<group>"; };
+		A7C296D32918EB990013951E /* TPOTComissionerHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPOTComissionerHelper.h; sourceTree = "<group>"; };
+		A7C296D42918EB990013951E /* TPOTComissionerHelper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = TPOTComissionerHelper.mm; sourceTree = "<group>"; };
+		A7C296D8291908B40013951E /* TPComissionerLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPComissionerLogger.h; sourceTree = "<group>"; };
+		A7C296E3291912ED0013951E /* TPCommissionerHandlerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPCommissionerHandlerDelegate.h; sourceTree = "<group>"; };
+		A7C296E9291914A50013951E /* TPCommissionerHandlerDelegateBrigde.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPCommissionerHandlerDelegateBrigde.h; sourceTree = "<group>"; };
+		A7C29701291916F40013951E /* defines.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = defines.hpp; sourceTree = "<group>"; };
+		A7C29702291916F40013951E /* commissioner.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = commissioner.hpp; sourceTree = "<group>"; };
+		A7C29703291916F40013951E /* error.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = error.hpp; sourceTree = "<group>"; };
+		A7C29704291916F40013951E /* network_data.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = network_data.hpp; sourceTree = "<group>"; };
+		A7C29706291916F40013951E /* libcommissioner.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcommissioner.a; sourceTree = "<group>"; };
+		A7C29707291916F40013951E /* libcose.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcose.a; sourceTree = "<group>"; };
+		A7C29708291916F40013951E /* libfmt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmt.a; sourceTree = "<group>"; };
+		A7C29709291916F40013951E /* libevent_core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libevent_core.a; sourceTree = "<group>"; };
+		A7C2970A291916F40013951E /* libmbedcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmbedcrypto.a; sourceTree = "<group>"; };
+		A7C2970B291916F40013951E /* libmbedx509.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmbedx509.a; sourceTree = "<group>"; };
+		A7C2970C291916F40013951E /* libmbedtls.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmbedtls.a; sourceTree = "<group>"; };
+		A7C2970D291916F40013951E /* libcommissioner-common.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libcommissioner-common.a"; sourceTree = "<group>"; };
+		A7C2970E291916F40013951E /* libcn-cbor.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libcn-cbor.a"; sourceTree = "<group>"; };
+		A7C2970F291916F40013951E /* libevent_pthreads.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libevent_pthreads.a; sourceTree = "<group>"; };
+		A7C29721291919920013951E /* TPCommissionerHandlerDelegateBrigde.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = TPCommissionerHandlerDelegateBrigde.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A75F0298291132C100136DF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7C2971C291916F40013951E /* libcn-cbor.a in Frameworks */,
+				A7C2971A291916F40013951E /* libmbedtls.a in Frameworks */,
+				A7C29716291916F40013951E /* libfmt.a in Frameworks */,
+				A7C2971D291916F40013951E /* libevent_pthreads.a in Frameworks */,
+				A7C29718291916F40013951E /* libmbedcrypto.a in Frameworks */,
+				A7C29714291916F40013951E /* libcommissioner.a in Frameworks */,
+				A7C2971B291916F40013951E /* libcommissioner-common.a in Frameworks */,
+				A7C29715291916F40013951E /* libcose.a in Frameworks */,
+				A7C29717291916F40013951E /* libevent_core.a in Frameworks */,
+				A7C29719291916F40013951E /* libmbedx509.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A75F02A2291132C200136DF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A75F02A6291132C200136DF8 /* TPOpenthreadCommissioner.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A75F0291291132C100136DF8 = {
+			isa = PBXGroup;
+			children = (
+				A75F029D291132C100136DF8 /* TPOpenthreadCommissioner */,
+				A75F02A9291132C200136DF8 /* TPOpenthreadCommissionerTests */,
+				A75F029C291132C100136DF8 /* Products */,
+				A7B01A3529138039002D5B88 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A75F029C291132C100136DF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A75F029B291132C100136DF8 /* TPOpenthreadCommissioner.framework */,
+				A75F02A5291132C200136DF8 /* TPOpenthreadCommissionerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A75F029D291132C100136DF8 /* TPOpenthreadCommissioner */ = {
+			isa = PBXGroup;
+			children = (
+				A7C296CB2918AE0D0013951E /* Helper */,
+				A7B01A3A291399EC002D5B88 /* libs */,
+				A7B01A342912254E002D5B88 /* Models */,
+				A7B01A2D291139B4002D5B88 /* TPBorderAgentDiscover.h */,
+				A7B01A2C291139B4002D5B88 /* TPBorderAgentDiscover.mm */,
+				A75F029E291132C100136DF8 /* TPOpenthreadCommissioner.h */,
+				A75F029F291132C100136DF8 /* TPOpenthreadCommissioner.docc */,
+			);
+			path = TPOpenthreadCommissioner;
+			sourceTree = "<group>";
+		};
+		A75F02A9291132C200136DF8 /* TPOpenthreadCommissionerTests */ = {
+			isa = PBXGroup;
+			children = (
+				A75F02AA291132C200136DF8 /* TPOpenthreadCommissionerTests.m */,
+			);
+			path = TPOpenthreadCommissionerTests;
+			sourceTree = "<group>";
+		};
+		A7B01A342912254E002D5B88 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A7B01A3029122465002D5B88 /* TPBorderRouterNetService.h */,
+				A7B01A3129122465002D5B88 /* TPBorderRouterNetService.m */,
+				A79177AB291A0F1900985047 /* TPActiveOperationalDataset.h */,
+				A79177AC291A0F1900985047 /* TPActiveOperationalDataset.mm */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A7B01A3529138039002D5B88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7B01AA729150D06002D5B88 /* ot-commissioner.xcodeproj */,
+				A7B01A5E2914F4C7002D5B88 /* libc++.tbd */,
+				A7B01A38291398E1002D5B88 /* libcommissioner.a */,
+				A7B01A3629138039002D5B88 /* libcommissioner.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A7B01A3A291399EC002D5B88 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				A7C296FE291916F40013951E /* ot-commissioner */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		A7B01AA829150D06002D5B88 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7B01AC529150D06002D5B88 /* libcn-cbor.a */,
+				A7B01AC729150D06002D5B88 /* libcommissioner.a */,
+				A7B01AC929150D06002D5B88 /* libcommissioner-common.a */,
+				A7B01ACF29150D06002D5B88 /* libcose.a */,
+				A7B01AD129150D06002D5B88 /* libevent_core.a */,
+				A7B01AD329150D06002D5B88 /* libevent_extra.a */,
+				A7B01AD529150D06002D5B88 /* libevent_pthreads.a */,
+				A7B01AD729150D06002D5B88 /* libevent.a */,
+				A7B01AD929150D06002D5B88 /* libfmtd.a */,
+				A7B01AE329150D06002D5B88 /* libmbedcrypto.a */,
+				A7B01AE529150D06002D5B88 /* libmbedtls.a */,
+				A7B01AE729150D06002D5B88 /* libmbedx509.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A7C296CB2918AE0D0013951E /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				A7C296D8291908B40013951E /* TPComissionerLogger.h */,
+				A7C296E9291914A50013951E /* TPCommissionerHandlerDelegateBrigde.h */,
+				A7C29721291919920013951E /* TPCommissionerHandlerDelegateBrigde.mm */,
+				A7C296E3291912ED0013951E /* TPCommissionerHandlerDelegate.h */,
+				A7C296D32918EB990013951E /* TPOTComissionerHelper.h */,
+				A7C296D42918EB990013951E /* TPOTComissionerHelper.mm */,
+				A7C296CD2918AE0D0013951E /* ExtentionHelper.h */,
+				A7C296CC2918AE0D0013951E /* ExtentionHelper.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		A7C296FE291916F40013951E /* ot-commissioner */ = {
+			isa = PBXGroup;
+			children = (
+				A7C296FF291916F40013951E /* include */,
+				A7C29705291916F40013951E /* lib */,
+			);
+			path = "ot-commissioner";
+			sourceTree = "<group>";
+		};
+		A7C296FF291916F40013951E /* include */ = {
+			isa = PBXGroup;
+			children = (
+				A7C29700291916F40013951E /* commissioner */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		A7C29700291916F40013951E /* commissioner */ = {
+			isa = PBXGroup;
+			children = (
+				A7C29701291916F40013951E /* defines.hpp */,
+				A7C29702291916F40013951E /* commissioner.hpp */,
+				A7C29703291916F40013951E /* error.hpp */,
+				A7C29704291916F40013951E /* network_data.hpp */,
+			);
+			path = commissioner;
+			sourceTree = "<group>";
+		};
+		A7C29705291916F40013951E /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				A7C29706291916F40013951E /* libcommissioner.a */,
+				A7C29707291916F40013951E /* libcose.a */,
+				A7C29708291916F40013951E /* libfmt.a */,
+				A7C29709291916F40013951E /* libevent_core.a */,
+				A7C2970A291916F40013951E /* libmbedcrypto.a */,
+				A7C2970B291916F40013951E /* libmbedx509.a */,
+				A7C2970C291916F40013951E /* libmbedtls.a */,
+				A7C2970D291916F40013951E /* libcommissioner-common.a */,
+				A7C2970E291916F40013951E /* libcn-cbor.a */,
+				A7C2970F291916F40013951E /* libevent_pthreads.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A75F0296291132C100136DF8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7C296F2291915A20013951E /* TPCommissionerHandlerDelegateBrigde.h in Headers */,
+				A7C296DA291908B40013951E /* TPComissionerLogger.h in Headers */,
+				A79177AD291A0F1900985047 /* TPActiveOperationalDataset.h in Headers */,
+				A7C29711291916F40013951E /* commissioner.hpp in Headers */,
+				A7B01A3229122465002D5B88 /* TPBorderRouterNetService.h in Headers */,
+				A7C296D52918EB990013951E /* TPOTComissionerHelper.h in Headers */,
+				A7C29713291916F40013951E /* network_data.hpp in Headers */,
+				A7B01A2F291139B4002D5B88 /* TPBorderAgentDiscover.h in Headers */,
+				A7C296E5291912ED0013951E /* TPCommissionerHandlerDelegate.h in Headers */,
+				A75F02AC291132C200136DF8 /* TPOpenthreadCommissioner.h in Headers */,
+				A7C29710291916F40013951E /* defines.hpp in Headers */,
+				A7C29712291916F40013951E /* error.hpp in Headers */,
+				A7C296CF2918AE0D0013951E /* ExtentionHelper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A75F029A291132C100136DF8 /* TPOpenthreadCommissioner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A75F02AF291132C200136DF8 /* Build configuration list for PBXNativeTarget "TPOpenthreadCommissioner" */;
+			buildPhases = (
+				A75F0296291132C100136DF8 /* Headers */,
+				A75F0297291132C100136DF8 /* Sources */,
+				A75F0298291132C100136DF8 /* Frameworks */,
+				A75F0299291132C100136DF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TPOpenthreadCommissioner;
+			productName = TPOpenthreadCommissioner;
+			productReference = A75F029B291132C100136DF8 /* TPOpenthreadCommissioner.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A75F02A4291132C200136DF8 /* TPOpenthreadCommissionerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A75F02B2291132C200136DF8 /* Build configuration list for PBXNativeTarget "TPOpenthreadCommissionerTests" */;
+			buildPhases = (
+				A75F02A1291132C200136DF8 /* Sources */,
+				A75F02A2291132C200136DF8 /* Frameworks */,
+				A75F02A3291132C200136DF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A75F02A8291132C200136DF8 /* PBXTargetDependency */,
+			);
+			name = TPOpenthreadCommissionerTests;
+			productName = TPOpenthreadCommissionerTests;
+			productReference = A75F02A5291132C200136DF8 /* TPOpenthreadCommissionerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A75F0292291132C100136DF8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					A75F029A291132C100136DF8 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					A75F02A4291132C200136DF8 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = A75F0295291132C100136DF8 /* Build configuration list for PBXProject "TPOpenthreadCommissioner" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A75F0291291132C100136DF8;
+			productRefGroup = A75F029C291132C100136DF8 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A7B01AA829150D06002D5B88 /* Products */;
+					ProjectRef = A7B01AA729150D06002D5B88 /* ot-commissioner.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				A75F029A291132C100136DF8 /* TPOpenthreadCommissioner */,
+				A75F02A4291132C200136DF8 /* TPOpenthreadCommissionerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A7B01AC529150D06002D5B88 /* libcn-cbor.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libcn-cbor.a";
+			remoteRef = A7B01AC429150D06002D5B88 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A7B01AC729150D06002D5B88 /* libcommissioner.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcommissioner.a;
+			remoteRef = A7B01AC629150D06002D5B88 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A7B01AC929150D06002D5B88 /* libcommissioner-common.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libcommissioner-common.a";
+			remoteRef = A7B01AC829150D06002D5B88 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A7B01ACF29150D06002D5B88 /* libcose.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcose.a;
+			remoteRef = A7B01ACE29150D06002D5B88 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A7B01AD129150D06002D5B88 /* libevent_core.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libevent_core.a;
+			remoteRef = A7B01AD029150D06002D5B88 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A7B01AD329150D06002D5B88 /* libevent_extra.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libevent_extra.a;
+			remoteRef = A7B01AD229150D06002D5B88 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A7B01AD529150D06002D5B88 /* libevent_pthreads.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libevent_pthreads.a;
+			remoteRef = A7B01AD429150D06002D5B88 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A7B01AD729150D06002D5B88 /* libevent.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libevent.a;
+			remoteRef = A7B01AD629150D06002D5B88 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A7B01AD929150D06002D5B88 /* libfmtd.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libfmtd.a;
+			remoteRef = A7B01AD829150D06002D5B88 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A7B01AE329150D06002D5B88 /* libmbedcrypto.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libmbedcrypto.a;
+			remoteRef = A7B01AE229150D06002D5B88 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A7B01AE529150D06002D5B88 /* libmbedtls.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libmbedtls.a;
+			remoteRef = A7B01AE429150D06002D5B88 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A7B01AE729150D06002D5B88 /* libmbedx509.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libmbedx509.a;
+			remoteRef = A7B01AE629150D06002D5B88 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A75F0299291132C100136DF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A75F02A3291132C200136DF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A75F0297291132C100136DF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A79177AE291A0F1900985047 /* TPActiveOperationalDataset.mm in Sources */,
+				A75F02A0291132C100136DF8 /* TPOpenthreadCommissioner.docc in Sources */,
+				A7C296D62918EB990013951E /* TPOTComissionerHelper.mm in Sources */,
+				A7B01A3329122465002D5B88 /* TPBorderRouterNetService.m in Sources */,
+				A7C296CE2918AE0D0013951E /* ExtentionHelper.m in Sources */,
+				A7B01A2E291139B4002D5B88 /* TPBorderAgentDiscover.mm in Sources */,
+				A7C29722291919920013951E /* TPCommissionerHandlerDelegateBrigde.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A75F02A1291132C200136DF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A75F02AB291132C200136DF8 /* TPOpenthreadCommissionerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A75F02A8291132C200136DF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A75F029A291132C100136DF8 /* TPOpenthreadCommissioner */;
+			targetProxy = A75F02A7291132C200136DF8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A75F02AD291132C200136DF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A75F02AE291132C200136DF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A75F02B0291132C200136DF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_MEMORY_MANAGEMENT = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = D8252FJRUX;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_INPUT_FILETYPE = automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/TPOpenthreadCommissioner/libs/ot-commissioner/include";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TPOpenthreadCommissioner/libs/ot-commissioner/lib",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tp.openthread.commissioner.TPOpenthreadCommissioner;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A75F02B1291132C200136DF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_MEMORY_MANAGEMENT = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = D8252FJRUX;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_INPUT_FILETYPE = automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/TPOpenthreadCommissioner/libs/ot-commissioner/include";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TPOpenthreadCommissioner/libs/ot-commissioner/lib",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tp.openthread.commissioner.TPOpenthreadCommissioner;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A75F02B3291132C200136DF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D8252FJRUX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tp.openthread.commissioner.TPOpenthreadCommissionerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A75F02B4291132C200136DF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D8252FJRUX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tp.openthread.commissioner.TPOpenthreadCommissionerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A75F0295291132C100136DF8 /* Build configuration list for PBXProject "TPOpenthreadCommissioner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A75F02AD291132C200136DF8 /* Debug */,
+				A75F02AE291132C200136DF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A75F02AF291132C200136DF8 /* Build configuration list for PBXNativeTarget "TPOpenthreadCommissioner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A75F02B0291132C200136DF8 /* Debug */,
+				A75F02B1291132C200136DF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A75F02B2291132C200136DF8 /* Build configuration list for PBXNativeTarget "TPOpenthreadCommissionerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A75F02B3291132C200136DF8 /* Debug */,
+				A75F02B4291132C200136DF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A75F0292291132C100136DF8 /* Project object */;
+}
